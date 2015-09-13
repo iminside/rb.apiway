@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'erb'
+require 'fileutils'
+require 'logger'
+require 'apiway/path'
+require 'apiway/logger'
+require 'apiway/version'
+require 'apiway/extensions'
+require 'apiway/generator'
+require 'apiway/commands'
+
+Apiway::Commands.run *ARGV

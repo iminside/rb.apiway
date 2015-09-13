@@ -1,0 +1,5 @@
+class Base
+
+  protected
+
+end
