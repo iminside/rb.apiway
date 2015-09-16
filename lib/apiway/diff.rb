@@ -28,7 +28,7 @@ module Apiway
       else
 
         unless source.empty?
-         @del[ @del_c ]  = source.size
+          @del[ @del_c ] = @del_c + source.size
         end
 
         unless target.empty?
