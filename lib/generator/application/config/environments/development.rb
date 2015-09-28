@@ -1,4 +1,4 @@
-Apiway::Application.configure :development do |config|
+Apiway::Application.configure do |config|
 
 
   config.set apiway_log:       :info
