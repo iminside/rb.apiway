@@ -14,6 +14,7 @@ module Apiway
       lib/**/*.rb
       config/environments/#{ environment.to_s }.rb
       config/initializers/**/*.rb
+      app/models/**/*.rb
       app/base/**/*.rb
       app/controllers/application.rb
       app/resources/application.rb
