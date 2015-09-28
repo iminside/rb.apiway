@@ -10,6 +10,11 @@ module Apiway
     set database_file:     File.join( root, 'config/database.yml' )
 
 
+    get '*' do
+      request.websocket? ? request.websocket{ |ws| Apiway::Client.new ws } : pass
+    end
+
+
     %W(
       lib/**/*.rb
       config/environments/#{ environment.to_s }.rb
@@ -35,11 +40,6 @@ module Apiway
       register Sinatra::Reloader
       also_reload File.join( root, '**/*.rb' )
       # also_reload File.join( Apiway.path, '**/*.rb' )
-    end
-
-
-    get '*' do
-      request.websocket? ? request.websocket{ |ws| Apiway::Client.new ws } : pass
     end
 
 
