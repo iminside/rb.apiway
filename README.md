@@ -211,19 +211,19 @@ class TestController < ApplicationController
   #
   #   - Before filters:
   #
-  #       before_action :action_name
-  #       before_action :action_name, only:   :method_name
-  #       before_action :action_name, only:   [ :method_name, :method_name ]
-  #       before_action :action_name, except: :method_name
-  #       before_action :action_name, except: [ :method_name, :method_name ]
+  #       before_action :method_name
+  #       before_action :method_name, only:   :action_name
+  #       before_action :method_name, only:   [ :action_name, :action_name ]
+  #       before_action :method_name, except: :action_name
+  #       before_action :method_name, except: [ :action_name, :action_name ]
   #
   #   - After filters:
   #
-  #       after_action  :action_name
-  #       after_action  :action_name, only:   :method_name
-  #       after_action  :action_name, only:   [ :method_name, :method_name ]
-  #       after_action  :action_name, except: :method_name
-  #       after_action  :action_name, except: [ :method_name, :method_name ]
+  #       after_action  :method_name
+  #       after_action  :method_name, only:   :action_name
+  #       after_action  :method_name, only:   [ :action_name, :action_name ]
+  #       after_action  :method_name, except: :action_name
+  #       after_action  :method_name, except: [ :action_name, :action_name ]
   #
   #
   #  Instance methods:
