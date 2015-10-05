@@ -99,7 +99,7 @@ module Apiway
       end
 
       def write( path, content )
-        File.open( File.join( Dir.pwd, path ), 'w' ) { |file| file.write( content ) }
+        File.write( File.join( Dir.pwd, path ), content )
         puts "Apiway: Created: #{ path }"
       end
 
